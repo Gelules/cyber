@@ -1,0 +1,15 @@
+[user]
+    name = Gélules
+    email = gelules@gelules.gelules
+
+[color]
+    ui = true
+
+[alias]
+    st = status
+    pl = pull
+    ph = push
+
+[push]
+    default = simple
+
