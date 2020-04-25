@@ -6,7 +6,8 @@ packages="kali-linux-everything \
 	  stow
 	  most
 	  valgrind
-          exuberant-ctags"
+          exuberant-ctags
+          toilet"
 
 
 apt update

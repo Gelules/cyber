@@ -101,7 +101,7 @@ precmd ()
 alias ls='ls --color=auto'
 alias ll='ls -l'
 alias valgrindcolor='~/.scripts/valgrind-color.sh'
-alias up='apt update && apt upgrade && apt dist-upgrade && apt autoremove'
+alias up='apt update && apt upgrade && apt full-upgrade && apt autoremove'
 alias vpn_htb='openvpn ~/.vpn/htb.ovpn &'
 
 # Functions
