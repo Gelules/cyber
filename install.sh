@@ -21,3 +21,4 @@ chsh -s $(which zsh)
 
 mkdir -p ~/.config/i3
 stow -t ~/.config/i3 i3
+dpkg -iR deb/

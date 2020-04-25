@@ -107,11 +107,18 @@ alias up='apt update && apt upgrade && apt dist-upgrade && apt autoremove'
 # Functions
 mkcd ()
 {
-    if [ ! -d "$1" ]
+    [ ! -d "$1" ] && mkdir $1 ; cd $1
+}
+
+nessus ()
+{
+    /etc/init.d/nessusd status >> /dev/null
+    if [ $? -eq 3 ]
     then
-        mkdir $1
+        /etc/init.d/nessusd start
+    else
+        /etc/init.d/nessusd stop
     fi
-    cd $1
 }
 
 function fuck() {
