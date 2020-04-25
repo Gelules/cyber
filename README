@@ -2,4 +2,6 @@ This is a repository with my configuration files and scripts to help me prepare 
 
 The install script uses stow to make symlinks from the repository to the root's home.
 
-Be aware that the root login is hard written in some files, you should use them with the user root.
+Be aware that:
+    The root login is hard written in some files, you should use them with the user root.
+    I use an azerty keyboard for this configuration.
