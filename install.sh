@@ -14,5 +14,6 @@ apt install $packages
 stow zsh
 stow utils
 stow vim
+stow git
 
 chsh -s $(which zsh)
