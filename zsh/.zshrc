@@ -103,6 +103,7 @@ alias ll='ls -l'
 alias se='sudoedit'
 alias valgrindcolor='~/.scripts/valgrind-color.sh'
 alias up='apt update && apt upgrade && apt dist-upgrade && apt autoremove'
+alias vpn_htb='openvpn ~/.vpn/htb.ovpn &'
 
 # Functions
 mkcd ()
