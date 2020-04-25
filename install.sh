@@ -5,7 +5,8 @@ packages="kali-linux-everything \
 	  xclip
 	  stow
 	  most
-	  valgrind"
+	  valgrind
+          exuberant-ctags"
 
 
 apt update
