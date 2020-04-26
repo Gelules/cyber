@@ -7,7 +7,9 @@ packages="kali-linux-everything \
 	  most
 	  valgrind
           exuberant-ctags
-          toilet"
+          toilet
+          gobuster
+          tree"
 
 
 apt update
