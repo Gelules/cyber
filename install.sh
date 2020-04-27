@@ -9,12 +9,20 @@ packages="kali-linux-everything \
           exuberant-ctags
           toilet
           gobuster
-          tree
-          python3-impacket"
+          tree"
 
 
 apt update
 apt install $packages
+
+# Impacket
+pip3 install argparse pyasn1 pycryptodomex pyOpenSSL ldapdomaindump flask ldap3 pyReadline --user
+mkdir ~/Downloads
+cd ~/Downloads
+git clone https://github.com/SecureAuthCorp/impacket
+cd impacket
+pip3 install .
+cd ~/.oscp
 
 stow zsh
 stow utils
