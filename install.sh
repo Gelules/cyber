@@ -9,7 +9,8 @@ packages="kali-linux-everything \
           exuberant-ctags
           toilet
           gobuster
-          tree"
+          tree
+          python3-impacket"
 
 
 apt update
