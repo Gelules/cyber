@@ -1,7 +1,7 @@
 #!/bin/sh
 
-packages="kali-linux-everything \
-	  kali-desktop-i3 \
+packages="kali-linux-everything
+	  kali-desktop-i3
 	  xclip
 	  stow
 	  most
