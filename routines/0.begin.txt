@@ -1,2 +1,2 @@
 I got an IP, or worst, I know the target is in my network but I don't know which is it.
-I go to the nmap directory and use `search_target.sh' to get the IP, and then `ports_enumeration' to know what ports are available to pentest.
+I use my nmap scripts `search_target.sh' to get the IP if I don't have it already, and then `ports_enumeration' to know what ports are available to pentest.
