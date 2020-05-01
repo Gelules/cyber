@@ -5,3 +5,12 @@ The install script uses stow to make symlinks from the repository to the root's 
 Be aware that:
     The root login is hard written in some files, you should use them with the user root.
     I use an azerty keyboard for this configuration.
+
+Directories used in `install.sh' are for installation only and are not design to pentest.
+
+rountines/:
+    It contains files of what I usually do depending of what I am facing of. The filenames speak for themselves.
+
+nmap/:
+    - search_target.sh: Use it to scan a whole network and find your target.
+    - ports_enumeration: Scan a target to list ports.

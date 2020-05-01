@@ -1,0 +1,14 @@
+If http(s) ports are open:
+
+1.gobuster
+    While on the terminal, I call gobuster to maybe find interesting files and directories.
+    gobuster dir -u TARGET -w /usr/share/wordlists/dirb/{common,big}.txt
+
+2.firefox
+    As stupid as it is, opening the site could lead us to an heuristic technic to find a vulnerability.
+    Plus, Firefox will be use with BurpSuite.
+
+3.burpsuite
+    To begin with, I simply scan the target site with BurpSuite, and filter what I see on the Site map tab.
+
+TODO: nikto
