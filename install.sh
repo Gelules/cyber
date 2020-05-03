@@ -10,7 +10,9 @@ packages="kali-linux-everything
           toilet
           gobuster
           tree
-          python3-setuptools"
+          python3-setuptools
+          bloodhound
+          neo4j"
 
 
 apt update
@@ -24,6 +26,8 @@ git clone https://github.com/SecureAuthCorp/impacket
 cd impacket
 pip3 install .
 cd ~/.oscp
+
+pip3 install bloodhound --user
 
 stow zsh
 stow utils
