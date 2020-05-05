@@ -12,7 +12,8 @@ packages="kali-linux-everything
           tree
           python3-setuptools
           bloodhound
-          neo4j"
+          neo4j
+          vlc"
 
 
 apt update
@@ -41,3 +42,6 @@ stow -t ~/.config/i3 i3
 dpkg -iR deb/
 
 mkdir ~/.vpn
+
+# Execute vlc as root
+sed -i s/geteuid/getppid/g /usr/bin/vlc
