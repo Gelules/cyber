@@ -103,6 +103,7 @@ alias ll='ls -l'
 alias valgrindcolor='~/.scripts/valgrind-color.sh'
 alias up='apt update && apt upgrade && apt full-upgrade && apt autoremove'
 alias vpn_htb='openvpn ~/.vpn/htb.ovpn &'
+alias vpn_thm='openvpn ~/.vpn/thm.ovpn &'
 
 # Functions
 mkcd ()
