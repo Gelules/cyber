@@ -1,0 +1,6 @@
+When a WordPress is appearing, I scan it with wpscan as is:
+    wpscan -e vp,vt,u TARGET
+
+to enumerate the plugins, themes and users.
+
+-P, -U, --password-attack and --stealthy could be interesting.
