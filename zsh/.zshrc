@@ -108,7 +108,7 @@ alias vpn_thm='openvpn ~/.vpn/thm.ovpn &'
 # Functions
 mkcd ()
 {
-    [ ! -d "$1" ] && mkdir $1 ; cd $1
+    [ ! -d "$1" ] && mkdir -p $1 ; cd $1
 }
 
 nessus ()
