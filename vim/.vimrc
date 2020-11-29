@@ -41,7 +41,6 @@ call plug#begin('~/.vim/plugged')
 
 " Bag of mappings
 Plug 'tpope/vim-surround'
-Plug 'tpope/vim-repeat'
 Plug 'romainl/vim-qf'
 
 " Navigation
@@ -52,15 +51,11 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'luochen1990/rainbow'
 
-" Filetype specific plugins
-Plug 'pearofducks/ansible-vim'
-
 " Tag management
 Plug 'ludovicchabant/vim-gutentags'
 
 " 'IDE' features
 Plug 'tpope/vim-fugitive'
-Plug 'janko/vim-test'
 
 call plug#end()
 
@@ -279,7 +274,3 @@ nmap [q <Plug>(qf_qf_previous)
 nmap ]q <Plug>(qf_qf_next)
 nmap [l <Plug>(qf_loc_previous)
 nmap ]l <Plug>(qf_loc_next)
-
-" Mappings for vim-test
-nmap <silent> <leader>ts :TestSuite<cr>
-
