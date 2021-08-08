@@ -113,12 +113,12 @@ mkcd ()
 
 nessus ()
 {
-    /etc/init.d/nessusd status >> /dev/null
+    systemctl status nessusd.service >> /dev/null
     if [ $? -eq 3 ]
     then
-        /etc/init.d/nessusd start
+        systemctl start nessusd.service
     else
-        /etc/init.d/nessusd stop
+        systemctl stop nessusd.service
     fi
 }
 
