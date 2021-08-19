@@ -11,6 +11,7 @@ packages="kali-linux-everything
           gobuster
           tree
           python3-setuptools
+          python3-pip
           bloodhound
           neo4j
           vlc"
