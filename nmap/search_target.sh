@@ -1,6 +1,6 @@
 #!/bin/sh
 
-if [ -z "$1" ]
+if [ $# -eq 0 ]
 then
     interface=eth0
 else
@@ -21,4 +21,7 @@ done < fping.txt
 
 rm fping.txt
 
-./ports_enumeration.sh
+echo -n "Target(s): "
+read targets
+
+./ports_enumeration.sh $targets
