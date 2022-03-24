@@ -1,0 +1,6 @@
+To search for subdomain, I use wfuzz.
+
+wfuzz -w wordlist.txt -u http://domain.tld -v -c -H "Host:FUZZ.domain.tld" [--sc 200 # or any other filter]
+
+Wordlist I use:
+/usr/share/wordlists/seclists/Discovery/DNS/subdomains-top1million-110000.txt
