@@ -31,6 +31,7 @@ cd ~/.oscp
 
 pip3 install bloodhound --user
 
+mv ~/.zshrc ~/.zshrc.original
 stow zsh
 stow utils
 stow vim
