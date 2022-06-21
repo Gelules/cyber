@@ -20,15 +20,7 @@ packages="kali-linux-everything
 apt update
 apt install $packages
 
-# Impacket
-pip3 install argparse pyasn1 pycryptodomex pyOpenSSL ldapdomaindump flask ldap3 pyReadline --user
-mkdir ~/Downloads
-cd ~/Downloads
-git clone https://github.com/SecureAuthCorp/impacket
-cd impacket
-pip3 install .
-cd ~/.oscp
-
+pip3 install impacket
 pip3 install bloodhound --user
 
 mv ~/.zshrc ~/.zshrc.original
