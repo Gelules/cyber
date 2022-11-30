@@ -140,6 +140,12 @@ blackscreen ()
   fi
 }
 
+setup ()
+{
+    up
+    vim -c ':PlugUpgrade' -c ':PlugUpdate' -c ':quitall!'
+}
+
 # Exports
 export PROMPT='%F{207}%n% %F{75}@%F{207}%m% %F{75}[%F{214}%~% %F{75}]%F{75}$%f '
 export RPROMPT='${vcs_info_msg_0_}'
@@ -148,3 +154,10 @@ export PATH="/root/.local/bin:/sbin:$PATH"
 export EDITOR='vim'
 export LANG='en_US.UTF-8'
 export LC_ALL='en_US.UTF-8'
+
+if [ ! -f /tmp/zsh/updated ]
+then
+    mkdir /tmp/zsh
+    touch /tmp/zsh/updated
+    setup
+fi
