@@ -104,6 +104,7 @@ alias valgrindcolor='~/.scripts/valgrind-color.sh'
 alias up='sudo apt update && sudo apt upgrade && sudo apt full-upgrade && sudo apt autoremove'
 alias vpn_htb='sudo openvpn ~/.vpn/htb.ovpn'
 alias vpn_thm='sudo openvpn ~/.vpn/thm.ovpn'
+alias binja='~/Downloads/binaryninja/binaryninja'
 
 # Functions
 mkcd ()
