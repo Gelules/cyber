@@ -101,9 +101,9 @@ precmd ()
 alias ls='ls --color=auto'
 alias ll='ls -l'
 alias valgrindcolor='~/.scripts/valgrind-color.sh'
-alias up='apt update && apt upgrade && apt full-upgrade && apt autoremove'
-alias vpn_htb='openvpn ~/.vpn/htb.ovpn &'
-alias vpn_thm='openvpn ~/.vpn/thm.ovpn &'
+alias up='sudo apt update && sudo apt upgrade && sudo apt full-upgrade && sudo apt autoremove'
+alias vpn_htb='sudo openvpn ~/.vpn/htb.ovpn'
+alias vpn_thm='sudo openvpn ~/.vpn/thm.ovpn'
 
 # Functions
 mkcd ()
@@ -113,12 +113,12 @@ mkcd ()
 
 nessus ()
 {
-    systemctl status nessusd.service >> /dev/null
+    sudo systemctl status nessusd.service >> /dev/null
     if [ $? -eq 3 ]
     then
-        systemctl start nessusd.service
+        sudo systemctl start nessusd.service
     else
-        systemctl stop nessusd.service
+        sudo systemctl stop nessusd.service
     fi
 }
 

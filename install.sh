@@ -17,8 +17,8 @@ packages="kali-linux-everything
           vlc"
 
 
-apt update
-apt install $packages
+sudo apt update
+sudo apt install $packages
 
 pip3 install impacket
 pip3 install bloodhound --user
@@ -33,7 +33,7 @@ chsh -s $(which zsh)
 
 mkdir -p ~/.config/i3
 stow -t ~/.config/i3 i3
-dpkg -iR deb/
+sudo dpkg -iR deb/
 
 mkdir ~/.vpn
 
