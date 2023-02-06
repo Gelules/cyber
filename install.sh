@@ -38,4 +38,4 @@ dpkg -iR deb/
 mkdir ~/.vpn
 
 # Execute vlc as root
-sed -i s/geteuid/getppid/g /usr/bin/vlc
+# sed -i s/geteuid/getppid/g /usr/bin/vlc

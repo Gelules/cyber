@@ -36,7 +36,7 @@ zstyle ':completion:*' accept-exact '*(N)'
 zstyle ':completion:*' use-cache on
 zstyle ':completion:*' cache-path ~/.zsh/cache 
 
-zstyle :compinstall filename '/root/.zshrc'
+zstyle :compinstall filename '/home/kali/.zshrc'
 
 autoload -Uz compinit
 compinit
@@ -150,7 +150,7 @@ setup ()
 export PROMPT='%F{207}%n% %F{75}@%F{207}%m% %F{75}[%F{214}%~% %F{75}]%F{75}$%f '
 export RPROMPT='${vcs_info_msg_0_}'
 export PAGER='most'
-export PATH="/root/.local/bin:/sbin:$PATH"
+export PATH="/home/kali/.local/bin:/sbin:$PATH"
 export EDITOR='vim'
 export LANG='en_US.UTF-8'
 export LC_ALL='en_US.UTF-8'
